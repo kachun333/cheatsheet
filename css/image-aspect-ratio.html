@@ -1,0 +1,39 @@
+<!-- source: https://codepen.io/avelone/pen/Lxgejp -->
+<div style="width: 50%">
+<h3>WCAG friendly</h3>
+<div class="frame-square">
+	<img 
+		src="https://1.bp.blogspot.com/-9QM7ciGXRkQ/V1hsB-wNLBI/AAAAAAAAMoA/eYbSHs00PTAjrI4QAmvYAIGCUe1AuRAnwCLcB/s1600/bryan_cranston_0095.jpg" 
+		alt="a tall image" 
+		title="tall image"
+	/>
+	</div>
+<h3>Background image</h3>
+<div class="frame-square background-img" ></div>
+<div>
+
+<style> 
+.frame-square {
+    width: 100%;
+    padding-top: 50%;  /*2:1 aspect ratio*/
+    overflow: hidden;
+    position: relative;
+}
+
+.frame-square img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+.background-img {
+	background-image:url(https://1.bp.blogspot.com/-9QM7ciGXRkQ/V1hsB-wNLBI/AAAAAAAAMoA/eYbSHs00PTAjrI4QAmvYAIGCUe1AuRAnwCLcB/s1600/bryan_cranston_0095.jpg); 
+	background-size: cover; 
+	background-position: center center;
+}
+</style>
