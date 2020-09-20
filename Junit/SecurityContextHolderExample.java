@@ -1,4 +1,4 @@
-class UserPointsBalanceResourceIT {
+class SecurityContextHolderExampleResourceIT {
 
     @BeforeEach
     public void initTest() {
