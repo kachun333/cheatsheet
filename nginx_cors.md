@@ -29,7 +29,7 @@ location / {
       # Om nom nom cookies
       #
       add_header 'Access-Control-Allow-Credentials' 'true' always;
-      add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
+      add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
 
       #
       # Custom headers and headers various browsers *should* be OK with but aren't
@@ -45,19 +45,11 @@ location / {
       return 204;
    }
 
-   if ($request_method = 'POST') {
-      add_header 'Access-Control-Allow-Origin' '*' always;
-      add_header 'Access-Control-Allow-Credentials' 'true' always;
-      add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
-      add_header 'Access-Control-Allow-Headers' 'X-Authorization-Firebase,Authorization,Link,X-Total-Count,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
-   }
+   add_header 'Access-Control-Allow-Origin' '*' always;
+   add_header 'Access-Control-Allow-Credentials' 'true' always;
+   add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
+   add_header 'Access-Control-Allow-Headers' 'X-Authorization-Firebase,Authorization,Link,X-Total-Count,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
    
-   if ($request_method = 'GET') {
-      add_header 'Access-Control-Allow-Origin' '*' always;
-      add_header 'Access-Control-Allow-Credentials' 'true' always;
-      add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS' always;
-      add_header 'Access-Control-Allow-Headers' 'Authorization,Link,X-Total-Count,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
-     }
    # wide open CORS config ends
 
    }
