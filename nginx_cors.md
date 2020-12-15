@@ -73,5 +73,5 @@ sudo service nginx restart
 ```
 
 # References
-[bradtraversy nginx](https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896)
-[Wide open nginx CORS configuration](https://michielkalkman.com/snippets/nginx-cors-open-configuration/)
+1. [Brad Traversy nginx](https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896)
+2. [Wide open nginx CORS configuration](https://michielkalkman.com/snippets/nginx-cors-open-configuration/)
