@@ -48,7 +48,12 @@ location / {
    add_header 'Access-Control-Allow-Origin' '*' always;
    add_header 'Access-Control-Allow-Credentials' 'true' always;
    add_header 'Access-Control-Allow-Methods' 'GET, POST, PUT, DELETE, OPTIONS' always;
-   add_header 'Access-Control-Allow-Headers' 'X-Authorization-Firebase,Authorization,Link,X-Total-Count,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
+   add_header 'Access-Control-Allow-Headers' 'X-Authorization-Firebase,Authorization,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always;
+      #
+      # Custom headers and headers various browsers *should* be able to use it.
+      # see https://stackoverflow.com/questions/37897523/axios-get-access-to-response-header-fields
+      #
+   add_header 'Access-Control-Expose-Headers' 'Link, X-Total-Count' always;
    
    # wide open CORS config ends
 
