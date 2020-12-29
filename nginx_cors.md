@@ -24,7 +24,7 @@ location / {
    
    # wide open CORS config start
    if ($request_method = 'OPTIONS') {
-      add_header 'Access-Control-Allow-Origin' '\*' always; 
+      add_header 'Access-Control-Allow-Origin' '*' always; 
       #
       # Om nom nom cookies
       #
@@ -34,7 +34,7 @@ location / {
       #
       # Custom headers and headers various browsers *should* be OK with but aren't
       #
-      add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always ;
+      add_header 'Access-Control-Allow-Headers' 'X-Authorization-Firebase,Authorization,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type' always ;
 
       #
       # Tell client that this pre-flight info is valid for 20 days
