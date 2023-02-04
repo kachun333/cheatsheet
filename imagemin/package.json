@@ -1,0 +1,24 @@
+{
+  "name": "cheatsheet-imagemin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachun333/cheatsheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kachun333/cheatsheet/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/kachun333/cheatsheet#readme",
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0"
+  }
+}
