@@ -1,2 +1,4 @@
-imagemin/build/*
+imagemin/build
 imagemin/node_modules
+sharp/jpg
+sharp/node_modules
